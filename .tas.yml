@@ -8,8 +8,9 @@ preMerge:
     - "./test/**/**.js"
 preRun:
      command:
+        - sudo apt-get install firefox-esr
         - npm install
-        - npm run build 
+        - npm run build
 postRun:
      command:
         - node --version
