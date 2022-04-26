@@ -1,0 +1,15 @@
+---
+framework: mocha
+postMerge:
+  pattern: 
+    - "./test/**/**.js"
+preMerge:
+  pattern:
+    - "./test/**/**.js"
+preRun:
+     command:
+        - npm run build 
+postRun:
+     command:
+        - node --version
+version: 2.2
